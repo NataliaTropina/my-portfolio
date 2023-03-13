@@ -1,0 +1,347 @@
+
+
+body {
+    font-family: 'Russo One', sans-serif;
+    margin: 0;
+  }
+
+  /* header: */
+  
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: url(./images/header4.avif) no-repeat;
+    width: 1550px;
+    height: 700px;
+    background-size:cover;
+    background-position:center; 
+  }
+
+.profil-foto {
+    height: 175px;
+    width: 175px;
+    position: absolute;
+    left: 660px;
+    top: 180px;
+    border: 10px solid gray;
+    opacity: 60%;
+    border-radius: 50%;
+}
+
+.hello {
+    color: gray;
+    opacity: 60%;
+    position: absolute;
+    left: 610px; ;
+    top: 105px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.student {
+    color: gray;
+    opacity: 60%;
+    position: absolute;
+    left: 610px; ;
+    top: 400px;
+    font-size: 20px;
+   
+     
+}
+
+
+a {
+    color: black;
+    background-color:gray;
+    opacity: 60%;
+    height: 25px;
+    width: 120px;
+    margin-top:20px ;
+    border-radius:5px; 
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.navbar-btn, .home-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 775px;
+    height: 100px;
+    position: sticky;
+    top: 10px;
+
+}
+
+.btn:hover {
+    color: gray;
+    text-decoration: underline;
+    background-color: white;
+    opacity: 100%;   
+    transition: 1s;
+
+}
+
+h1 {
+    margin: 0px;
+    color: gray;
+    margin-left: 25px;
+}
+
+/* About me */
+
+.about-me {
+    position: relative;
+    background: url(./images/hexagon.jpg) no-repeat;
+    width: 1550px;
+    height: 700px;
+    background-size:cover;
+    background-position:center; 
+   
+}
+
+.strip {
+    background-color: gray ;
+    width: 4px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 775px;
+}
+
+
+.intro {
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    font-size: x-large;
+}
+
+.disziplin {
+    width: 650px;
+    margin-top: 50px;
+}
+
+p {
+    width: 650px;
+    margin-top: 50;
+   
+}
+
+#ait {
+    color: red;
+}
+
+#ait:hover {
+    text-decoration: underline;
+    
+}
+
+/* hard skills */
+
+.hard-skills {
+    position: relative;
+    background: url(./images/hexagon.jpg) no-repeat;
+    width: 1550px;
+    height: 700px;
+    background-size:cover;
+    background-position:center; 
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: flex-start;
+     width: 1550px;
+    height: 700px;
+  }
+
+.telc {
+  background: url(./images/telc_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 100px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+.java {
+  background: url(./images/java_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+.js {
+  background: url(./images/js_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+.html {
+  background: url(./images/html_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+.css {
+  background: url(./images/css_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+.github {
+  background: url(./images/git_hub_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+.git {
+  background: url(./images/git_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* soft skills: */
+
+  .soft-skills {
+    position: relative;
+    background: url(./images/hexagon.jpg) no-repeat;
+    width: 1550px;
+    height: 700px;
+    background-size:cover;
+    background-position:center; 
+  }
+
+  .up {
+   width: 1500px;
+   height: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin-top: 80px;
+  }
+
+  .kompetenzen {
+    color: black;
+    background-color: darkgray;
+    height: 40px;
+    width: 170px;
+    border-radius: 7px;
+  }
+
+  .down {
+    width: 1500px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+
+  .column1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 170px;
+    margin-top: 50px; 
+  }
+
+  .column {
+    margin-top:20px; ;
+  }
+
+  #contact {
+     background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+  }
+
+  .contact {
+    background-color: lightgrey;
+    width: 1550px;
+    height: 300px;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .link {
+    margin-top: 100px;
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 170px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  .link:hover {
+    color: black;
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 29%, rgba(148,187,233,1) 61%);
+    transition: 1s;
+
+  }
+
+  
+
+
+
+
+
+
+
