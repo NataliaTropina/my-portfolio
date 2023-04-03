@@ -33,7 +33,6 @@ body {
     height: 175px;
     width: 175px;
     border: 10px solid gray;
-    opacity: 60%;
     border-radius: 50%;
 }
 
@@ -76,6 +75,7 @@ a {
 
 .btn {
   margin-left: 150px;
+  padding-top:3px; ;
 }
 
 .btn:hover {
@@ -89,6 +89,8 @@ a {
 
 h1 {
     margin: 0px;
+    padding-top: 20px; 
+    padding-left:20px ;
     color: gray;
     margin-left: 25px;
 }
@@ -114,6 +116,14 @@ h1 {
     left: 775px;
 }
 
+.line {
+     background-color: gray;
+     height: 4px;
+     width: 1530px;
+     margin-bottom: 0px;
+     padding-bottom:0px ;
+
+}
 
 .intro {
     max-width: 1500px;
@@ -151,7 +161,7 @@ p {
     position: relative;
     background: url(./images/hexagon.jpg) no-repeat;
     max-width: 1530px;
-    height: 700px;
+    height: 750px;
     background-size:cover;
     background-position:center; 
 }
@@ -165,15 +175,23 @@ p {
     height: 700px;
   }
 
-.telc {
+#telc {
   background: url(./images/telc_logo.png) no-repeat;
   background-size: cover;
   height: 60px;
   width: 100px;
   margin-top: 34px; 
   margin-left: 40px;
+  border: none;
 }
-.java {
+
+#telc:hover, #java:hover, #js:hover, #html:hover, #css:hover, #github:hover, #git:hover {
+cursor: pointer;
+}
+
+
+
+#java {
   background: url(./images/java_logo.png) no-repeat;
   background-size: cover;
   height: 60px;
@@ -181,7 +199,7 @@ p {
   margin-top: 34px; 
   margin-left: 40px;
 }
-.js {
+#js {
   background: url(./images/js_logo.png) no-repeat;
   background-size: cover;
   height: 60px;
@@ -189,7 +207,7 @@ p {
   margin-top: 34px; 
   margin-left: 40px;
 }
-.html {
+#html {
   background: url(./images/html_logo.png) no-repeat;
   background-size: cover;
   height: 60px;
@@ -197,7 +215,7 @@ p {
   margin-top: 34px; 
   margin-left: 40px;
 }
-.css {
+#css {
   background: url(./images/css_logo.png) no-repeat;
   background-size: cover;
   height: 60px;
@@ -205,7 +223,7 @@ p {
   margin-top: 34px; 
   margin-left: 40px;
 }
-.github {
+#github {
   background: url(./images/git_hub_logo.png) no-repeat;
   background-size: cover;
   height: 60px;
@@ -213,7 +231,7 @@ p {
   margin-top: 34px; 
   margin-left: 40px;
 }
-.git {
+#git {
   background: url(./images/git_logo.png) no-repeat;
   background-size: cover;
   height: 60px;
@@ -222,30 +240,15 @@ p {
   margin-left: 40px;
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+#icon1, #icon2, #icon3, #icon4, #icon5, #icon6, #icon7 {
+  margin-top: 30px;
+  width: 400px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
 }
 
 /* soft skills: */
@@ -304,6 +307,7 @@ p {
   /* contact me: */
 
   #contact {
+    margin: 0px;
      background: rgb(238,174,202);
 background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
   }
@@ -329,7 +333,7 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
     height: 35px;
     border: none;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 30px 30px;
     font-size: 20px;
   }
 
@@ -339,6 +343,55 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
 background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     transition: color 2s;
 
+  }
+
+  .box {
+
+    width: 1530px; 
+    
+    
+  }
+  @media (min-width: 250px) and (max-width: 300px) {
+    .box {
+      width: 270px;
+    }
+
+  }
+
+  @media (min-width: 300px) and (max-width: 400px) {
+    .box {
+      width: 350px;
+    }
+
+  }  
+
+    @media (min-width: 400px) and (max-width: 500px){
+      .box {
+        width: 450px;
+      }
+    }
+
+    @media (min-width: 500px) and (max-width: 600px){
+      .box {
+        width: 550px;
+      }
+    }
+    
+    @media (min-width: 600px) and (max-width: 800){
+      .box {
+        width: 500px;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 1000px){
+      .box {
+        width: 900px;
+      }
+    }
+    
+    @media (min-width: 1000px) and (max-width: 1200px){
+      .box {
+        width: 1100px;
+      }
   }
 
   
