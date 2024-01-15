@@ -12,7 +12,7 @@ body {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    background: url(./images/header4.avif) no-repeat;
+    background: url(./images/matrix4.gif) no-repeat;
     max-width: 1530px;
     height: 700px;
     background-size:cover;
@@ -30,29 +30,23 @@ body {
   }
 
 .profil-foto {
-    height: 175px;
-    width: 175px;
-    border: 10px solid gray;
+    height: 300px;
+    width: 300px;
+    border: 10px solid whitesmoke;
     border-radius: 50%;
+    
 }
 
 .hello {
-    color: gray;
-    opacity: 60%;
-    font-size: 30px;
+    color: #f5f5f5;
+    font-size: 40px;
     font-weight: bold;
 }
-.student {
-    color: gray;
-    opacity: 60%;
-    font-size: 20px;
-   }
-
 
 a {
     color: black;
     background-color:gray;
-    opacity: 60%;
+    opacity: 80%;
     height: 25px;
     width: 120px;
     margin-top:20px ;
@@ -98,8 +92,9 @@ h1 {
 /* About me */
 
 .about-me {
+
     position: relative;
-    background: url(./images/hexagon.jpg) no-repeat;
+    background: white;
     max-width: 1530px;
     height: 700px;
     background-size:cover;
@@ -107,43 +102,47 @@ h1 {
    
 }
 
-.strip {
-    background-color: gray ;
-    width: 4px;
-    height: 100px;
-    position: absolute;
-    top: 0px;
-    left: 775px;
-}
-
 .line {
      background-color: gray;
      height: 4px;
-     width: 1530px;
+     max-width: 1530px;
      margin-bottom: 0px;
      padding-bottom:0px ;
 
 }
 
 .intro {
-    max-width: 1500px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
-    font-size: x-large;
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: first baseline;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: x-large;
 }
 
 .disziplin {
-    width: 650px;
-    margin-top: 50px;
+  width: 650px;
+  margin-top: 100px;
+  line-height: 1.5;
+  text-align:justify
 }
 
 p {
     width: 650px;
-    margin-top: 50;
-   
+    margin-top: 60;
+    line-height: 1.5;
+    text-align: justify;
+   }
+
+ul {
+  margin-left: 30px;
+}
+
+.inhalt {
+  margin-top: 0px;
+  
 }
 
 #ait {
@@ -158,21 +157,29 @@ p {
 /* hard skills */
 
 .hard-skills {
-    position: relative;
-    background: url(./images/hexagon.jpg) no-repeat;
-    max-width: 1530px;
-    height: 750px;
+    background: white;
+    max-width: 1900px;
+    height: 780px;
     background-size:cover;
     background-position:center; 
 }
 
-.icons {
+.icons-conteiner{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1530px;
+  height: 600px;
+}
+
+.icons1, .icons2, .icons3 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction:column;
+    flex-direction:row;
     align-items: flex-start;
-    max-width: 1500px;
-    height: 700px;
+    max-width: 510px;
+    height: 600px;
   }
 
 #telc {
@@ -180,22 +187,35 @@ p {
   background-size: cover;
   height: 60px;
   width: 100px;
-  margin-top: 34px; 
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-top: 34px;
   border: none;
 }
 
-#telc:hover, #java:hover, #js:hover, #html:hover, #css:hover, #github:hover, #git:hover {
+#telc:hover, #java:hover, #js:hover, #html:hover, #css:hover, #github:hover, #git:hover, 
+#react:hover, #spring:hover, #mongo:hover, #mysql:hover, #mongo:hover, #intellij:hover, #swagger:hover, #jira:hover, #api:hover{
 cursor: pointer;
+transform: translateY(-10px); 
+}
+
+#react {
+  background: url(./images/react_logo2.png) no-repeat;
+  background-size: cover;
+  height: 70px;
+  width: 80px;
+  margin-left: 31px;
+  margin-top: 34px;
+
+  border: none;
 }
 
 
 
 #java {
-  background: url(./images/java_logo.png) no-repeat;
+  background: url(./images/Java2-Logo.png) no-repeat;
   background-size: cover;
   height: 60px;
-  width: 60px;
+  width: 100px;
   margin-top: 34px; 
   margin-left: 40px;
 }
@@ -240,69 +260,170 @@ cursor: pointer;
   margin-left: 40px;
 }
 
-#icon1, #icon2, #icon3, #icon4, #icon5, #icon6, #icon7 {
-  margin-top: 30px;
-  width: 400px;
+#spring{
+  background: url(./images/spring3_logo.jpeg) no-repeat;
+  background-size: cover;
   height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+
+#mongo{
+  background: url(./images/mongo_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+
+#mysql{
+  background: url(./images/mysql_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+
+#api{
+  background: url(./images/api_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+
+#swagger{
+  background: url(./images/swagger-logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+
+#intellij{
+  background: url(./images/IntelliJ2_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+
+#jira{
+  background: url(./images/jira_logo.png) no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin-top: 34px; 
+  margin-left: 40px;
+}
+
+
+#icon1, #icon2, #icon3, #icon4, #icon5, #icon6, #icon7, #icon8, #icon9, #icon10, #icon11, #icon12, #icon13, #icon14, #icon15 {
+  margin-top: 30px;
+  width: 500px;
+  height: 60px;
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: end;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
-/* soft skills: */
+.stars {
+  display: inline-block;
+  font-size: 24px;
+  color: gray;
+  margin-top: 0px;
+  margin-left: 20px;
+}
 
-  .soft-skills {
+.stars-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Стилизация для разных уровней */
+.stars[data-rating="1"]::before {
+  content: '★☆☆☆☆';  /* Одна звезда и четыре пустые звезды ★☆☆☆☆ */
+}
+
+.stars[data-rating="2"]::before {
+  content: '★★☆☆☆';  /* Две звезды и три пустые звезды ★★☆☆☆ */
+}
+
+.stars[data-rating="3"]::before {
+  content: '★★★☆☆';  /* Три звезды и две пустые звезды ★★★☆☆ */
+}
+
+.stars[data-rating="4"]::before {
+  content: '★★★★☆';  /* Четыре звезды и одна пустая звезда ★★★★☆ */
+}
+
+.stars[data-rating="5"]::before {
+  content: '★★★★★';  /* Пять полных звезд ★★★★★ */
+}
+
+/* my projects: */
+
+  .my-projects {
     position: relative;
-    background: url(./images/hexagon.jpg) no-repeat;
+    background: white;
     max-width: 1530px;
     height: 700px;
     background-size:cover;
     background-position:center; 
   }
 
-  .up {
-   max-width: 1500px;
-   height: 50px;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: space-evenly;
-   margin-top: 80px;
-  }
-
-  .kompetenzen {
-    color: black;
-    background-color: darkgray;
-    height: 40px;
-    width: 170px;
-    border-radius: 7px;
-  }
-
-  .down {
-    max-width: 1500px;
-    height: 50px;
+  .links-p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-
   }
 
-  .column1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    height: 40px;
+  .link-p {
+    margin-top: 100px;
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     width: 170px;
-    margin-top: 50px; 
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    padding: 30px 30px;
+    font-size: 20px;
   }
 
-  .column {
-    margin-top:20px; ;
+  .link-p:hover {
+    color: black;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    transition: color 2s;
+
   }
+
+  .d-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .description {
+    margin-top: 50px;
+    width: 250px;
+    text-align: justify;
+
+  }
+
+  
 
   /* contact me: */
 
@@ -313,7 +434,7 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
   }
 
   .contact {
-    background-color: lightgrey;
+    background-color: white;
     max-width: 1530px;
     height: 300px;
   }
@@ -327,17 +448,49 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
 
   .link {
     margin-top: 100px;
-    background: rgb(238,174,202);
-background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: rgb(238, 174, 202);
+    background: linear-gradient(
+      90deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
     width: 170px;
-    height: 35px;
+    height: 60px; /* Увеличиваем высоту кнопки */
     border: none;
     border-radius: 10px;
-    padding: 30px 30px;
+    padding: 20px 30px; /* Уменьшаем вертикальный внутренний отступ */
     font-size: 20px;
+    line-height: 30px; /* Устанавливаем одинаковую высоту для текста */
   }
 
+  .link2 {
+    margin-top: 100px;
+    background: rgb(238, 174, 202);
+    background: linear-gradient(
+      90deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    width: 170px;
+    height: 60px; /* Увеличиваем высоту кнопки */
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px; /* Уменьшаем вертикальный внутренний отступ */
+    font-size: 20px;
+    line-height: 56px; 
+  }
+
+  
+
   .link:hover {
+    color: black;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    transition: color 1s;
+
+  }
+
+  .link2:hover {
     color: black;
     background: rgb(63,94,251);
 background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
@@ -351,50 +504,206 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
     
     
   }
-  @media (min-width: 250px) and (max-width: 300px) {
-    .box {
-      width: 270px;
-    }
-
+ /* Для экранов с шириной от 601px до 767px */
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .profil-foto {
+      height: 200px;
+      width: 200px;
+      margin-top: 20px; /* Уменьшите отступ сверху */
   }
 
-  @media (min-width: 300px) and (max-width: 400px) {
-    .box {
-      width: 350px;
-    }
-
-  }  
-
-    @media (min-width: 400px) and (max-width: 500px){
-      .box {
-        width: 450px;
-      }
-    }
-
-    @media (min-width: 500px) and (max-width: 600px){
-      .box {
-        width: 550px;
-      }
-    }
-    
-    @media (min-width: 600px) and (max-width: 800){
-      .box {
-        width: 500px;
-      }
-    }
-    @media (min-width: 800px) and (max-width: 1000px){
-      .box {
-        width: 900px;
-      }
-    }
-    
-    @media (min-width: 1000px) and (max-width: 1200px){
-      .box {
-        width: 1100px;
-      }
+  .hello {
+      font-size: 24px;
   }
+
+  a {
+      height: 20px;
+      width: 100px;
+      font-size: 14px;
+      margin-top: 10px; /* Уменьшите отступ сверху */
+  }
+
+  .btns {
+      height: auto;
+  }
+
+  .btn {
+      margin-left: 20px;
+      padding-top: 2px;
+  }
+}
+
+/* Для экранов с шириной до 600px */
+@media screen and (max-width: 600px) {
+  header {
+      height: auto;
+  }
+
+  .images {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .profil-foto {
+      height: 150px;
+      width: 150px;
+      margin-top: 10px; /* Уменьшите отступ сверху */
+      border-width: 5px; /* Уменьшите толщину рамки */
+  }
+
+  .hello {
+      font-size: 20px;
+  }
+
+  a {
+      height: 15px;
+      width: 80px;
+      font-size: 12px;
+      margin-top: 5px; /* Уменьшите отступ сверху */
+  }
+
+  .btns {
+      height: auto;
+  }
+
+  .btn {
+      margin-left: 10px;
+      padding-top: 1px;
+  }
+}
+
+/* Для экранов с шириной до 480px (мобильные устройства) */
+@media screen and (max-width: 480px) {
+  header {
+      height: auto;
+      padding: 20px 10px; /* Уменьшите внутренний отступ */
+  }
+
+  .images {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px; /* Уменьшите отступ сверху */
+  }
+
+  .profil-foto {
+      height: 120px;
+      width: 120px;
+      margin-top: 10px; /* Уменьшите отступ сверху */
+      border-width: 3px; /* Уменьшите толщину рамки */
+  }
+
+  .hello {
+      font-size: 18px;
+  }
+
+  a {
+      height: 15px;
+      width: 80px;
+      font-size: 10px;
+      margin-top: 5px; /* Уменьшите отступ сверху */
+  }
+
+  .btns {
+      height: auto;
+      flex-direction: column; /* Столбцовая компоновка кнопок */
+  }
+
+  .btn {
+      margin-left: 0;
+      margin-top: 5px; /* Уменьшите отступ сверху */
+      padding-top: 1px;
+  }
+
+  .about-me,
+  .hard-skills,
+  .my-projects,
+  #contact {
+      height: auto;
+  }
+
+  .description,
+  .links-p,
+  .d-container,
+  .contact,
+  .links {
+      flex-direction: column; /* Столбцовая компоновка элементов */
+  }
+
+  .link-p,
+  .link,
+  .link2 {
+      width: 100%; /* Ширина кнопок на всю ширину экрана */
+      margin-top: 10px; /* Уменьшите отступ сверху */
+  }
+
+  .stars {
+      font-size: 20px;
+  }
+
+  .icons1,
+  .icons2,
+  .icons3 {
+      max-width: 100%;
+  }
+
+  #telc,
+  #react,
+  #java,
+  #js,
+  #html,
+  #css,
+  #github,
+  #git,
+  #spring,
+  #mongo,
+  #mysql,
+  #api,
+  #swagger,
+  #intellij,
+  #jira {
+      width: 80px;
+      height: 40px;
+      margin-left: 10px; /* Уменьшите отступ слева */
+      margin-top: 10px; /* Уменьшите отступ сверху */
+  }
+
+  #ait {
+      font-size: 16px;
+  }
+
+  .box {
+      width: 100%;
+  }
+}
+
+
 
   
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.fade-out {
+    animation: fadeOut 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
 
 
 

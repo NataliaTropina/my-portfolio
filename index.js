@@ -1,6 +1,6 @@
 "use strict"
 
-let telcBtn = document.getElementById("telc");
+/*let telcBtn = document.getElementById("telc");
 console.log(telcBtn);
 let telcParant = document.getElementById("icon1");
 
@@ -132,5 +132,110 @@ gitBtn.addEventListener('click', ()=>{
         toggle7 = true;
     }
 });
+
+let springBtn = document.getElementById("spring");
+let springParent = document.getElementById("icon8");
+let springDiv = document.createElement("div");
+let springTextNode = document.createTextNode("Spring Framework");
+
+springParent.style.position = "relative";
+springDiv.style.position = "absolute";
+springDiv.style.left = "50%";
+springDiv.style.transform = "translateX(-50%)";
+springDiv.style.top = "50px";
+springDiv.style.opacity = "0";
+
+springDiv.appendChild(springTextNode);
+let toggle8 = true;
+
+springBtn.addEventListener('click', () => {
+    if (toggle8) {
+        // Удаляем класс для предыдущей анимации (если он был добавлен ранее)
+        springDiv.classList.remove("fade-out");
+
+        // Задержка перед добавлением класса для анимации при появлении
+        setTimeout(() => {
+            springDiv.classList.add("fade-in");
+        }, 50);
+
+        // Устанавливаем нулевую прозрачность перед добавлением элемента в DOM
+        springDiv.style.opacity = "0";
+
+        // Добавляем элемент в родительский контейнер
+        springParent.appendChild(springDiv);
+
+        // Задержка перед установкой полной прозрачности (например, для плавного появления)
+        setTimeout(() => {
+            springDiv.style.opacity = "1";
+        }, 100);
+
+        toggle8 = false;
+    } else {
+        // Удаляем класс для предыдущей анимации (если он был добавлен ранее)
+        springDiv.classList.remove("fade-in");
+
+        // Добавляем класс для анимации при исчезновении
+        springDiv.classList.add("fade-out");
+
+        // Устанавливаем полную прозрачность перед началом анимации исчезновения
+        springDiv.style.opacity = "1";
+
+        // Таймаут перед удалением элемента из DOM
+        setTimeout(() => {
+            springDiv.remove();
+        }, 500); // Используем таймаут для того, чтобы дать время для анимации исчезновения
+
+        toggle8 = true;
+    }
+});
+
+
+let reactBtn = document.getElementById("react");
+let reactParent = document.getElementById("icon15");
+let reactDiv = document.createElement("div");
+let reactTextNode =document.createTextNode("React");
+
+reactParent.style.position = "relative"; // Изменено на "relative"
+reactDiv.style.position = "absolute";
+reactDiv.style.left = "50%";
+reactDiv.style.transform = "translateX(-50%)";
+reactDiv.style.top = "50px"; // Измените это значение по вашему усмотрени
+
+reactDiv.appendChild(reactTextNode);
+
+let toggle15 = true;
+
+reactBtn.addEventListener('click', ()=> {
+    if(toggle15){
+        reactParent.appendChild(reactDiv);
+        toggle15 = false;
+    } else {
+        reactDiv.remove();
+        toggle15 = true;
+    }
+}); */
+
+document.querySelectorAll('a.btn').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            const targetOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+            const duration = 500;  // Измените это значение по своему усмотрению
+
+            setTimeout(() => {
+                window.scrollTo({
+                    top: targetOffset,
+                    behavior: 'smooth'
+                });
+            }, duration);
+        }
+    });
+});
+
+
 
 
